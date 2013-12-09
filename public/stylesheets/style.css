@@ -1,0 +1,31 @@
+body{ margin:0px; padding:0px; border:0px;}  
+fieldset{ border:1px solid #676767; margin-bottom:15px;}  
+.App42PaaS_header_wrapper{ float: left; height: 94px; margin-top:-20px; width: 100%; min-width: 1024px; background-image:url('/images/navigation_bar_bg.png'); background-repeat: repeat-x; }  
+.App42PaaS_header_inner { width: 1024px; margin-left: auto; margin-right: auto; }  
+.App42PaaS_header { width: 1004px; float: left; padding: 0px 10px; } 
+.App42PaaS_header_inner
+.App42PaaS_header
+.logo { float: left; margin: 4px 20px 0px 0px; }  
+.App42PaaS_body { width: 1024px; margin: 20px auto; } 
+.App42PaaS_body_inner { width: 1024px; float: left; padding: 0px; background-color: rgb(215, 232, 236); margin-top:20px; } 
+.contactPage_title { width: 964px; float: left; padding: 30px; font-size: 26px; color: rgb(105, 105, 105); font-family: "Myriad Pro"; font-weight: normal; line-height: 22px; } 
+.form_wrapper { font-family: "Open Sans",Helvetica,Arial,sans-serif; font-size: 16px; color: rgb(105, 105, 105); line-height: 22px; float: left; width: 480px; min-height: 250px; margin: 20px 0px 0px; padding: 0px 0px 0px 30px; } 
+fieldset { border: 1px solid rgb(103, 103, 103); margin-bottom: 15px; } 
+.contactForm_tr { float: left; margin-bottom: 10px; margin-top: 5px; }
+.contactForm_td1 { float: left; width: 70px; font-size: 15px; color: rgb(105, 105, 105); font-weight: normal; margin-top: 7px; line-height: normal !important; }
+.contactForm_tdMiddle { float: left; width: 20px; font-size: 15px; color: rgb(105, 105, 105); font-weight: normal; margin-top: 7px; line-height: normal !important; }
+.contactForm_td2 { float: left; width: 200px; margin-bottom: 0px; }
+.Personal-input { background-color: rgb(248, 246, 247); border: 2px solid rgb(93, 173, 34); color: rgb(105, 105, 105); font-family: "Open Sans"; font-size: 12px; padding: 8px 5px; width: 292px; }
+.massage-textFild { background-color: rgb(248, 246, 247); border: 2px solid rgb(93, 173, 34); color: rgb(105, 105, 105); font-family: "Open Sans"; font-size: 12px; padding: 8px 5px; width: 292px; }
+.massage-box { margin-left: 90px; margin-top: 5px; }
+.form-button { width: 152px; height: 42px; float: left; }
+.reachus_wrapper { float: right; background-color: rgb(75, 152, 37); border: 3px solid rgb(53, 43, 31); padding: 15px; width: 367px; height: 135px; margin-top: 30px; }
+.reach_icon { position: relative; z-index: 999; left: -80px; width: 108px; }
+.reach_txt { position: relative; top: -103px; }
+.reachusTitle { font-family: Arial,Helvetica,sans-serif; color: rgb(31, 30, 30); font-size: 18px; width: 300px; float: left; margin: 0px 0px 10px 30px; }  
+.reachuslable { font-family: Arial,Helvetica,sans-serif; color: rgb(255, 255, 255); font-size: 15px; width: 130px; float: left; margin: 0px 20px 6px 30px; }
+.reachusLink { font-family: Arial,Helvetica,sans-serif; color: rgb(249, 205, 0); font-size: 15px; width: 180px; float: left; margin: 0px 0px 6px; }
+.reachus_wrapper_vcard { float: right; width: 297px; height: 154px; margin-top: 60px; background: url('/images/shephertz_card_bg.png') no-repeat scroll 0% 0% transparent; padding: 14px; }
+.vcard_txt { width: 172px; padding-top: 60px; font-family: Arial,Helvetica,sans-serif; font-size: 12px; color: rgb(248, 246, 247) !important; line-height: 16px !important; } table{width:960px;}
+.table-head{font-size:16px; font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif; border:1px solid #666; padding:5px; font-weight:bold;} td{font-size:14px; font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif; border:1px solid #666; padding:2px 2px 2px 5px; }
+

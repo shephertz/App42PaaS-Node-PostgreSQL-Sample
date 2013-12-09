@@ -1,0 +1,47 @@
+extends layout
+block content
+  .contactPage_title User Input Form
+    .form_wrapper
+      form(method='post', action='/users')
+        fieldset
+          legend Personal Particular
+          .contactForm_tr
+            .contactForm_td1 Name
+            .contactForm_tdMiddle : 
+            .contactForm_td2
+              input#name.Personal-input(name='name', type='text', value='')
+          .contactForm_tr
+            .contactForm_td1 Email
+            .contactForm_tdMiddle : 
+            .contactForm_td2
+              input.Personal-input(name='email', type='text', maxlength='30')
+        fieldset
+          legend What do you about this Page :
+          .massage-box
+            textarea.massage-textFild(name='des', cols='30', rows='5') Enter your instruction here...
+        .form-button(style='margin-left: 100px; margin-right: 10px;')
+          input#Submit.submit_btn(type='image', border='0', name='submit', alt='Submit', src='/images/submit_btn.png')
+        .form-button
+          input#Submit.clear_btn(type='image', border='0', name='clear', alt='clear', src='/images/clear_btn.png')
+    .reachus_wrapper
+      .reach_icon
+        a(href='/')
+          img(border='0', alt='App42PaaS', src='/images/reach_icon.png')
+      .reach_txt
+        .reachusTitle  REACH US AT: 
+        .reachuslable  Sales Enquiries: 
+        .reachusLink
+          a(href='mailto:sales@shephertz.com') sales@shephertz.com
+        .reachuslable Feedback:
+        .reachusLink
+          a(href='mailto:feedback@shephertz.com') feedback@shephertz.com
+        .reachuslable Customer Support:
+        .reachusLink
+          a(href='mailto:support@shephertz.com') support@shephertz.com
+    .reachus_wrapper_vcard
+      .vcard_txt
+        | ShepHertz Technologies Pvt. Ltd.
+        | Spaze I-Tech Park, Tower-A,
+        | 11th floor - 1128, sector-49,
+        | Sohna Road, Gurgaon - 122001
+        | INDIA
