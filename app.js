@@ -42,13 +42,6 @@ connection.connect(function(err) {
 // Database setup
 connection.query("CREATE TABLE IF NOT EXISTS users(name varchar(128), email varchar(128), des varchar(256))");
 
-// connection.connect();
-app.get('/users', function (req, res) {
-connection.query('SELECT * FROM users', function(err, docs) { 
-    res.render('users', {users: docs, title: 'App42PaaS Express MySql Application'});
-  });
-});
-
 // Add a new User
 app.get("/users/new", function (req, res) {
   res.render("new", {
@@ -63,7 +56,7 @@ app.post("/users", function (req, res) {
   var des=req.body.des;
 
   connection.query('INSERT INTO users (name,email,des) VALUES ($1,$2,$3) RETURNING id', [name, email, des], function(err, docs) {
-    res.redirect('users');
+    res.redirect('/');
   });
 });
 
@@ -74,7 +67,7 @@ http.createServer(app).listen(app.get('port'), function(){
 
 // App root
 app.get('/', function(req, res){
-  res.redirect('/users', {
-    title: 'App42PaaS Express MySql Application'
+  connection.query('SELECT * FROM users', function(err, docs) { 
+    res.render('users', {users: docs, title: 'App42PaaS Express MySql Application'});
   });
 });
