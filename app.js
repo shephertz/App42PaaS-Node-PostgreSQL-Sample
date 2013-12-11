@@ -45,7 +45,7 @@ connection.query("CREATE TABLE IF NOT EXISTS users(name varchar(128), email varc
 // Add a new User
 app.get("/users/new", function (req, res) {
   res.render("new", {
-    title: 'App42PaaS Express MySql Application'
+    title: 'App42PaaS Express PostgreSQL Application'
   });
 });
 
@@ -68,6 +68,6 @@ http.createServer(app).listen(app.get('port'), function(){
 // App root
 app.get('/', function(req, res){
   connection.query('SELECT * FROM users', function(err, docs) { 
-    res.render('users', {users: docs, title: 'App42PaaS Express MySql Application'});
+    res.render('users', {users: docs, title: 'App42PaaS Express PostgreSQL Application'});
   });
 });
