@@ -29,9 +29,9 @@ if ('development' == app.get('env')) {
 }
 
 // Database URL and connection Object
-var conString = "postgres://<User Name>:<Password>@<VM IP>:<VM PORT>/<Database Name>";
+var conString = "postgres://User Name:Password@VM IP:VM PORT/DATABASE NAME";
+// var conString = "postgres://postgres:ankit1234@localhost:5432/nodedb_development";
 var connection = new pg.Client(conString);
-
 // Connect PostgreSQL
 connection.connect(function(err) {
   if(err) {
@@ -40,7 +40,8 @@ connection.connect(function(err) {
 });
 
 // Database setup
-connection.query("CREATE TABLE IF NOT EXISTS users(name varchar(128), email varchar(128), des varchar(256))");
+// connection.query('DROP TABLE users');
+connection.query("CREATE TABLE IF NOT EXISTS users(id integer, name varchar(128), email varchar(128), des varchar(256))");
 
 // Add a new User
 app.get("/users/new", function (req, res) {
@@ -54,7 +55,7 @@ app.post("/users", function (req, res) {
   var name=req.body.name;
   var email=req.body.email;
   var des=req.body.des;
-
+  
   connection.query('INSERT INTO users (name,email,des) VALUES ($1,$2,$3) RETURNING id', [name, email, des], function(err, docs) {
     res.redirect('/');
   });
